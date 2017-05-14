@@ -9,8 +9,8 @@ It has a series of options which allow you to decide how you want to mitigate th
 
 WANNAFIX allows you to automate the following tasks:
 
-1) Add or remove the kill switch domains to your host file!
-2) Enable or disable SMB!
+1) Enable or disable SMB!
+2) Add or remove the kill switch domains to your host file!
 3) Spawn or kill a MUTEX which prevents WANNACRY from starting!
 
 <strong>Note that the author of this script is not responsible for any damage caused, you automatically accept this when you run the script!</strong>
