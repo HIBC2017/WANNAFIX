@@ -14,3 +14,5 @@ WANNAFIX allows you to automate the following tasks:
 3) Spawn or kill a MUTEX which prevents WANNACRY from starting!
 
 <strong>Note that the author of this script is not responsible for any damage caused, you automatically accept this when you run the script!</strong>
+
+P.S this script must be run as administrator user to work correctly depending on the environment that you're attempting to execute it in.
