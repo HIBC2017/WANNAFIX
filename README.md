@@ -3,15 +3,16 @@
 WANNAFIX is a mitigation script for the Wannacry Ransomware that has been spreading lately.
 
 It has a series of options which allow you to decide how you want to mitigate the threat while applying the appropriate patches.
-<b>Please note that it should be treated as a temporary fix and should not be treated as a permanent fix.
+
+<b>Please note that it should be treated as a temporary fix and should not be treated as a permanent fix.</b>
 
 # OPTIONS
 
 WANNAFIX allows you to carry out the following tasks:
 
-1) Add the kill switch domains to your host file (if they don't already exist)
-2) Disable SMB (if it's not already disabled)
-3) Spawn a MUTEX which prevents Wannacry from starting (if it's not already active)
+1) Add the kill switch domains to your host file
+2) Disable SMB
+3) Spawn a MUTEX which prevents Wannacry from starting
 
 If you have already carried out some of the above tasks, the script will give you the option of enabling/disabling.
 
