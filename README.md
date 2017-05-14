@@ -3,7 +3,7 @@
 WANNAFIX is a mitigation script for the Wannacry Ransomware that has been spreading lately.
 It has a series of options which allow you to decide how you want to mitigate the threat while applying the appropriate patches.
 
-<strong>Please note that it should be treated as a temporary fix and should not be treated as a permanent fix!</strong>
+<strong>Please note that this script should be treated as a temporary fix and should not be treated as a permanent fix!</strong>
 
 # OPTIONS
 
