@@ -15,4 +15,4 @@ WANNAFIX allows you to carry out the following tasks:
 
 If you have already carried out some of the above tasks, the script will give you the option of enabling/disabling.
 
-Please note that the author of this script is not responsible for any damages caused if the script malfunctions, you automatically accept this term when you run the script.
+<strong>Note that the author of this script is not responsible for any damage caused, you automatically accept this when you run the script!</strong>
