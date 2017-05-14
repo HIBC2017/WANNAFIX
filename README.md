@@ -15,4 +15,4 @@ WANNAFIX allows you to automate the following tasks:
 
 <strong>Note that the author of this script is not responsible for any damage caused, you automatically accept this when you run the script!</strong>
 
-P.S this script must be run as administrator user to work correctly depending on the environment that you're attempting to execute it in.
+P.S this script must be run under administrator user to operate correctly depending on the environment that you're attempting to execute it in.
