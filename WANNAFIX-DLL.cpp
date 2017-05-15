@@ -38,10 +38,7 @@ int createMutex()
 {
     HANDLE mutexObj  = CreateMutex(NULL,TRUE,"Global\\MsWinZonesCacheCounterMutexA0");
     if(GetLastError() == ERROR_ALREADY_EXISTS){
-        //printf("\n FATAL: There was an error creating the MUTEX, your machine is already infected or you have run this script previously! Error code: %d", GetLastError());
-        while(1){
-            Sleep(10000);
-        }
+        return 0;
     }
     // FIXME this will probably never run, owing to the mutex being in place...
     return 0;
