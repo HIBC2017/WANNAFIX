@@ -1,5 +1,3 @@
-[[wannacry.png]]
-
 # WANNAFIX
 
 WANNAFIX is a mitigation script for the WANNACRY Ransomware that has been spreading lately.
