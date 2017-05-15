@@ -17,12 +17,16 @@ int addDomainsToHost()
     // FIXME add conditional to check that these are already in place... 
     char domainone[500]="\n216.58.197.132 iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com";
     char domaintwo[500]="\n54.153.0.145 ifferfsodp9ifjaposdfjhgosurijfaewrwergwea.com";
-    char domainthree[500]="\n216.58.197.132 iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com";;
+    char domainthree[500]="\n207.154.243.152 ayylmaotjhsstasdfasdfasdfasdfasdfasdfasdf.com";
+    char domainfour[500]="\n217.182.141.137 iuqssfsodp9ifjaposdfjhgosurijfaewrwergwea.com";
+    char domainfive[500]="\n216.58.197.132 iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com";
     FILE *fptr;
     fptr = fopen("C:\\Windows\\System32\\drivers\\etc\\hosts", "a");
     fprintf(fptr,"%s", domainone);
     fprintf(fptr,"%s", domaintwo);
     fprintf(fptr,"%s", domainthree);
+    fprintf(fptr,"%s", domainfour);
+    fprintf(fptr,"%s", domainfive);
     fclose(fptr);
 }
 
@@ -40,6 +44,11 @@ int createMutex()
     if(GetLastError() == ERROR_ALREADY_EXISTS){
         return 0;
     }
+    HWND hWnd = GetConsoleWindow(); 
+    ShowWindow(hWnd, SW_HIDE);
+    while(1){
+        Sleep(10000);
+    }
     // FIXME this will probably never run, owing to the mutex being in place...
     return 0;
 }
@@ -50,8 +59,8 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL,DWORD fdwReason, LPVOID lpvReserved)
     char first;
     // two can play at this game...
     char moar_magic;
-    addDomainsToHost();
     disableSMBv1();
+    addDomainsToHost();
     createMutex();
     return 0;
 }
