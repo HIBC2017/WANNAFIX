@@ -43,11 +43,6 @@ int createMutex()
             Sleep(10000);
         }
     }
-//    HWND hWnd = GetConsoleWindow(); 
-//    ShowWindow(hWnd, SW_HIDE);
-//    while(1){
-//        Sleep(10000);
-//    }
     // FIXME this will probably never run, owing to the mutex being in place...
     return 0;
 }
