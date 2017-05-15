@@ -32,13 +32,15 @@ int main()
     {
 
         char domainone[500]="\n216.58.197.132 iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com";
-        char domaintwo[500]="\n216.58.197.132 www.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com";;
+        char domaintwo[500]"\n54.153.0.145 ifferfsodp9ifjaposdfjhgosurijfaewrwergwea.com";
+        char domainthree[500]="\n216.58.197.132 iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com";;
         FILE *fptr;
 
         fptr = fopen("C:\\Windows\\System32\\drivers\\etc\\hosts", "a");
 
         fprintf(fptr,"%s", domainone);
         fprintf(fptr,"%s", domaintwo);
+        fprintf(fptr,"%s", domainthree);
         fclose(fptr);
     }
     
