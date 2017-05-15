@@ -1,3 +1,5 @@
+!["WANNAFIX, MAKING WANNACRY, CRY!"](http://i.imgur.com/nPiX5JW.png)
+
 # WANNAFIX
 
 WANNAFIX is a mitigation script for the WANNACRY Ransomware that has been spreading lately.
