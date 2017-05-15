@@ -20,4 +20,4 @@ WANNAFIX allows you to automate the following tasks:
 P.S this script must be run under an administrator user to operate correctly depending on the environment that you're attempting to execute it in.
 
 # TO DO LIST
-1) Reboot is required after disabling SMB, need to rectify this problem [✓]
+1) Reboot is required after disabling SMB, need to rectify this problem! [✓]
