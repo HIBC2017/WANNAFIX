@@ -24,4 +24,4 @@ Many thanks!
 
 ## UPDATE
 
-Now includes the creation of the NULL file required to prevent Petya from starting!
+Now includes the creation of the NULL file required to prevent "Petya" Ransomware from starting!
