@@ -1,6 +1,6 @@
 ## WANNAFIX DLL
 
-See https://github.com/HIBC2017/WANNAFIX/pull/3 and https://github.com/HIBC2017/WANNAFIX/pull/9 for more information!
+See https://github.com/HIBC2017/WANNAFIX/pull/3 and https://github.com/HIBC2017/WANNAFIX/pull/8 for more information!
 
 ## WANNAFIX DLL USAGE
 
