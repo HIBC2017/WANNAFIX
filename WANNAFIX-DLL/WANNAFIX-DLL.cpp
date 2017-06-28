@@ -56,12 +56,26 @@ int createMutex()
 int createPetyaFile()
 {
     HANDLE hFile;
+    hFile = CreateFile("C:\\Windows\\perfc", // name of the write
+                       GENERIC_WRITE,          // open for writing
+                       1,                      // share for reading
+                       NULL,                   // default security
+                       CREATE_NEW,             // create new file only
+                       FILE_ATTRIBUTE_READONLY,  // read only file
+                       NULL);                  // no attr. template
+    hFile = CreateFile("C:\\Windows\\perfc.dll", // name of the write
+                       GENERIC_WRITE,          // open for writing
+                       1,                      // share for reading
+                       NULL,                   // default security
+                       CREATE_NEW,             // create new file only
+                       FILE_ATTRIBUTE_READONLY,  // read only file
+                       NULL);                  // no attr. template
     hFile = CreateFile("C:\\Windows\\perfc.dat", // name of the write
                        GENERIC_WRITE,          // open for writing
                        1,                      // share for reading
                        NULL,                   // default security
                        CREATE_NEW,             // create new file only
-                       FILE_ATTRIBUTE_NORMAL,  // normal file
+                       FILE_ATTRIBUTE_READONLY,  // read only file
                        NULL);                  // no attr. template
     return 0;
 }
