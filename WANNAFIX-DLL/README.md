@@ -2,7 +2,6 @@
 
 See https://github.com/HIBC2017/WANNAFIX/pull/3 for further information!
 
-
 ## WANNAFIX DLL USAGE
 
 Simple really - from any .bat or .ps1 script, you can just call rundll32 to run the file:
@@ -22,3 +21,7 @@ This subdirectory contains a compiled WANNAFIX.dll file as well as the source fo
 **As with the WANNAFIX.exe file, this is only a temporary fix, albeit one that can easily be widely deployed.**
 
 Many thanks!
+
+## UPDATE
+
+Now includes the creation of the NULL file required to prevent Petya from starting!
