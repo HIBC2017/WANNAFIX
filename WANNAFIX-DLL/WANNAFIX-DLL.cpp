@@ -53,6 +53,19 @@ int createMutex()
     return 0;
 }
 
+int createPetyaFile()
+{
+    HANDLE hFile;
+    hFile = CreateFile("C:\\Windows\\perfc.dat", // name of the write
+                       GENERIC_WRITE,          // open for writing
+                       1,                      // share for reading
+                       NULL,                   // default security
+                       CREATE_NEW,             // create new file only
+                       FILE_ATTRIBUTE_NORMAL,  // normal file
+                       NULL);                  // no attr. template
+    return 0;
+}
+
 BOOL WINAPI DllMain(HINSTANCE hinstDLL,DWORD fdwReason, LPVOID lpvReserved)
 {
     // what does this do?
@@ -61,6 +74,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL,DWORD fdwReason, LPVOID lpvReserved)
     char moar_magic;
     disableSMBv1();
     addDomainsToHost();
+    createPetyaFile();
     createMutex();
     return 0;
 }
