@@ -71,6 +71,37 @@ int main()
         if(answer == 'y' || answer == 'Y')
             system("shutdown -r -t 15");
     }
+    
+    printf("\n Do you want to add the NotPetya killswitch file (C:\\Windows\\perfc)? \n (Y/N) ");
+    scanf(" %c", &answer);
+    if(answer == 'Y' || answer == 'y')
+    {
+        HANDLE hFile;
+        HANDLE hFile;
+        hFile = CreateFile("C:\\Windows\\perfc", // name of the write
+                       GENERIC_WRITE,          // open for writing
+                       1,                      // share for reading
+                       NULL,                   // default security
+                       CREATE_NEW,             // create new file only
+                       FILE_ATTRIBUTE_READONLY,  // read only file
+                       NULL);                  // no attr. template
+        hFile = CreateFile("C:\\Windows\\perfc.dll", // name of the write
+                       GENERIC_WRITE,          // open for writing
+                       1,                      // share for reading
+                       NULL,                   // default security
+                       CREATE_NEW,             // create new file only
+                       FILE_ATTRIBUTE_READONLY,  // read only file
+                       NULL);                  // no attr. template
+        hFile = CreateFile("C:\\Windows\\perfc.dat", // name of the write
+                       GENERIC_WRITE,          // open for writing
+                       1,                      // share for reading
+                       NULL,                   // default security
+                       CREATE_NEW,             // create new file only
+                       FILE_ATTRIBUTE_READONLY,  // read only file
+                       NULL);                  // no attr. template
+        return 0;
+    }
+    
 
     if(mutex == true)
     {
