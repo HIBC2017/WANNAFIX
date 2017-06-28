@@ -2,19 +2,17 @@
 
 See https://github.com/HIBC2017/WANNAFIX/pull/3 for further information!
 
-**NB** - now includes the Petya killswitch file write...
-
-## Usage
+## WANNAFIX DLL USAGE
 
 Simple really - from any .bat or .ps1 script, you can just call rundll32 to run the file:
 
 `rundll32 \\path\to\WANNAFIX.dll,0`
 
-Note that the comma-0 at the end doesn't do anything, but is required for rundll32 to work, so make sure you keep that in!
+Note that the comma-0 at the end doesn't do anything, but it's required for rundll32 to work, so make sure you keep that in!
 
-## Overview of how it works: 
+## How does it work?
 
-Rather than sending/running a .exe across a network, you can also host a single .dll file and have this accessed from a file share by a script running as admin. 
+Rather than sending/running an executable file across the network, you can also host a single .dll file and have this accessed from a file share by a script running as admin. 
 
 This subdirectory contains a compiled WANNAFIX.dll file as well as the source for the file. This does everything that the main .exe does, but _without_ the interaction being required. 
 
@@ -23,3 +21,7 @@ This subdirectory contains a compiled WANNAFIX.dll file as well as the source fo
 **As with the WANNAFIX.exe file, this is only a temporary fix, albeit one that can easily be widely deployed.**
 
 Many thanks!
+
+## UPDATE
+
+Now includes the creation of the NULL file required to prevent Petya from starting!
